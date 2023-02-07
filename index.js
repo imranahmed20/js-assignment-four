@@ -4,26 +4,21 @@
 // Number must be multiplied by 3 first, Then add that number again with 10, 
 // Divide the total result by 2, And subtract five from that number and return
 
-
 function mindGame(number) {
     const multiplication = number * 3;
     const sum = multiplication + 10;
     const rest = sum / 2;
     const result = rest - 5;
     if (typeof number != 'number') {
-        console.log("Please Provide a valid number")
+        alert("Please provide a valid number")
     }
     return result;
-
 
 }
 
 const number = 50;
 const mindGameResult = mindGame(number);
 console.log(mindGameResult)
-
-
-
 
 
 // Second 
@@ -34,8 +29,7 @@ console.log(mindGameResult)
 
 function evenOdd(string) {
     if (typeof string != 'string') {
-        alert('Please Provide a valid String')
-        // console.log("Please Provide a valid String")
+       alert("Please provide a valid String")
 
     }
     if (string.length % 2 === 0) {
@@ -46,11 +40,12 @@ function evenOdd(string) {
     }
 
 }
-evenOdd('Phero')
+evenOdd('line')
 
 
 
 // Third
+
 // Description:
 // First I take a number as input and subtract the number by 7.
 //  If the subtraction result is less than 7 then I return that thing and
@@ -73,21 +68,12 @@ const sevenResult = isLGSeven(num);
 console.log(sevenResult);
 
 
-
-
-
-
-
-
-
-
-
 // Four 
+
 // Description:
 // I have taken an egg as input.  It took some age.
 //   If there is any negative data in it, then I have
 //  extracted it and added how many there are and returned.
-
 
 function findingBadData(age) {
     let negativesCount = 0;
@@ -109,8 +95,8 @@ console.log(result)
 
 
 
-
 // Five
+
 // Description:
 // I have taken three numbers as parameters.  Multiply 21 by
 //  the number of jams of the first friend and 32 by the number 
