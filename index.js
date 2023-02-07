@@ -1,4 +1,6 @@
-// First 
+// -------------------
+//    First 
+// --------------------
 
 // Description:
 // Number must be multiplied by 3 first, Then add that number again with 10, 
@@ -16,12 +18,15 @@ function mindGame(number) {
 
 }
 
-const number = 50;
+const number = 5;
 const mindGameResult = mindGame(number);
-console.log(mindGameResult)
+// console.log(mindGameResult)
 
 
-// Second 
+// -------------------
+//    Two 
+// --------------------
+
 
 // Description:
 // If a number is evenly divisible by 2 without any remainder, then it is an even number;
@@ -29,7 +34,7 @@ console.log(mindGameResult)
 
 function evenOdd(string) {
     if (typeof string != 'string') {
-       alert("Please provide a valid String")
+        alert("Please provide a valid String")
 
     }
     if (string.length % 2 === 0) {
@@ -40,11 +45,13 @@ function evenOdd(string) {
     }
 
 }
-evenOdd('line')
+// evenOdd('Phero')
 
 
+// -------------------
+//    Three 
+// --------------------
 
-// Third
 
 // Description:
 // First I take a number as input and subtract the number by 7.
@@ -53,6 +60,9 @@ evenOdd('line')
 
 function isLGSeven(num) {
     const restNum = num - 7;
+    if (typeof num != 'number') {
+        alert("Please provide a valid number")
+    }
     if (restNum <= 7) {
         return restNum;
     }
@@ -65,10 +75,13 @@ function isLGSeven(num) {
 
 const num = 15;
 const sevenResult = isLGSeven(num);
-console.log(sevenResult);
+// console.log(sevenResult);
 
 
-// Four 
+
+// -------------------
+//    Four 
+// --------------------
 
 // Description:
 // I have taken an egg as input.  It took some age.
@@ -91,11 +104,13 @@ function findingBadData(age) {
 
 const age = [-4, -9, -5, 33, -55]
 const result = findingBadData(age);
-console.log(result)
+// console.log(result)
 
 
 
-// Five
+// -------------------
+//    Five 
+// --------------------
 
 // Description:
 // I have taken three numbers as parameters.  Multiply 21 by
@@ -110,6 +125,7 @@ function gemsToDiamond(firstFriend, secondFriend, thirdFriend) {
     const secondFriendGam = secondFriend * 32;
     const thirdFriendGam = thirdFriend * 43;
     const totalGam = firstFriendGam + secondFriendGam + thirdFriendGam;
+
     if (totalGam >= 2000) {
         const restGam = totalGam - 2000;
         return restGam;
@@ -121,4 +137,4 @@ function gemsToDiamond(firstFriend, secondFriend, thirdFriend) {
     }
 }
 const totalDiamond = gemsToDiamond(100, 5, 1)
-console.log(totalDiamond)
+// console.log(totalDiamond)
